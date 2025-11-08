@@ -12,6 +12,7 @@
         let equationText = problemBox.textContent
           .replace(/â€“/g, '-')
           .replace(/âˆ’/g, '-')
+          .replace(/–/g, '-')
           .trim();
         equationText = equationText.replace(/[^\d+\-*/(). ]/g, '').trim();
 
